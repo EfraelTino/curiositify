@@ -2,13 +2,10 @@
 
 class Pow
 {
-    private $host = "srv1436.hstgr.io";
-    // private $user = "root";
-    private $user = "u694359124_curiositofy";
-    // private $pass = "";
-    private $pass = "l7]a]U:T@j0L";
-    // private $db = "nicolas";
-    private $db = "u694359124_curiositofy";
+    private $host = "localhost";
+    private $user = "root";
+    private $pass = "";
+    private $db = "database";
     public $dbConnect;
 
     public $respuesta = array();

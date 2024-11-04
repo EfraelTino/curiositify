@@ -4,11 +4,9 @@ class Pow
 {
     private $host = "localhost";
     private $user = "root";
-    // private $user = "u495112148_nicolas";
     private $pass = "";
-    // private $pass = "@Nicolas2023";
-    private $db = "nicolas";
-    // private $db = "148_nicolas";
+    private $db = "database";
+
     public $dbConnect;
 
     public $respuesta = array();
