@@ -29,7 +29,7 @@ $item4 = "";
         <?php
         include('./components/sidebar.php');
         ?>
-        <section class="z-[0]">
+        <section class="z-[0] w-full">
             <div>
                 <?php
 

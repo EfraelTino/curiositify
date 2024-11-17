@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 require_once "../../conexion/Cursos.php";
 date_default_timezone_set('America/Bogota');
-$fechau = date('d M Y');
+$fechau = date('Y-m-d H:i:s');
 $actions = new Cursos();
 if (isset($_POST["action"]) && $_POST["action"] == "getstudents") {
     $response = [

@@ -13,6 +13,10 @@ Bienvenido a **Curiositify**, tu solución de código abierto para lanzar plataf
 
 Visita nuestra demo en: [demo.curiositify.com](http://demo.curiositify.com)
 
+## Credencial de administrador:
+- **Usuario**: admin@gmail.com
+- **Contraseña**: @Developer2024
+
 ## Instalación
 
 ### Requisitos Previos

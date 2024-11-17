@@ -5,6 +5,7 @@ $params = $id_user;
 $obtenerUsuario = $operations->getCamposConCondicion($tabla, $condicion, $params);
 $obtenerUsuario = $operations->getCamposConCondicion($tabla, $condicion, $params);
 $tipo_user = $obtenerUsuario[0]['is_admin'];
+
 ?>
 <style>
     #sidebar {

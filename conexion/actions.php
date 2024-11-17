@@ -65,7 +65,7 @@ if (isset($_POST['action']) && $_POST['action'] == "login") {
     if (!$usuarios) {
         $response = array(
             "success" => false,
-            "message" => "Error de inicio de sesión. Por favor, inténtalo de nuevo más tarde."
+            "message" => "Usuario no encontrado, registrate."
         );
     } else {
         $usuarioEncontrado = false;
