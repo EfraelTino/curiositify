@@ -80,7 +80,7 @@ if ($statu_user == 1 || $statu_user == '1') {
                                         <div class="flex flex-col md:flex-row  justify-end gap-4 mb-0">
 
                                                 <a class="inline-flex bg-black text-white  items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-opacity-60 h-10 px-4 py-2"
-                                                    href="./addcurso">Nuevo curso
+                                                    href="./addcurso.php">Nuevo curso
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                         fill="white" class="bi bi-plus-circle" viewBox="0 0 16 16">
                                                         <path
@@ -150,7 +150,7 @@ if ($statu_user == 1 || $statu_user == '1') {
                                                                 <td class="px-4  py-2 align-middle text-black font-medium">
                                                                     <div class="flex justify-between ">
                                                                         <a class="text-[#15803d] bg-[#22c55e1a] flex items-center border !border-[#15803d] rounded py-1 px-2  text-[0.75rem]  gap-2"
-                                                                            href="./seelecciones?<?php echo 'idcr=' . $fila['id']; ?>">Ver
+                                                                            href="./seelecciones.php?<?php echo 'idcr=' . $fila['id']; ?>">Ver
                                                                             lecciones <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                                 height="16" fill="#15803d" class="bi bi-eye"
                                                                                 viewBox="0 0 16 16">
@@ -165,7 +165,7 @@ if ($statu_user == 1 || $statu_user == '1') {
                                                                     <div class="row container">
                                                                         <div class="col-6 d-flex justify-content-center p-1">
                                                                             <a class="text-black bg-green-400 p-2 rounded "
-                                                                                href="./editcurso?idcr=<?php echo $fila['id'] ?>">
+                                                                                href="./editcurso.php?idcr=<?php echo $fila['id'] ?>">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                                     height="16" fill="black"
                                                                                     class="bi bi-pencil-square" viewBox="0 0 16 16">

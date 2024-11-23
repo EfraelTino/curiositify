@@ -95,7 +95,7 @@ $item4 = "";
                             <div class="flex justify-end gap-2 items-center  px-3 mb-0">
                                 <div>
                                     <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#F3C623] text-black hover:bg-opacity-80 h-10 px-4 py-2"
-                                        href="./cursos"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                        href="./cursos.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path>
                                         </svg>Atrás
 
@@ -103,7 +103,7 @@ $item4 = "";
                                 </div>
                                 <div>
                                     <a class="inline-flex bg-black text-white  items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-opacity-60 h-10 px-4 py-2"
-                                        href="./addlecion?idcr=<?php echo $id_curso ?>">Nueva lección
+                                        href="./addlecion.php?idcr=<?php echo $id_curso ?>">Nueva lección
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
                                             class="bi bi-plus-circle" viewBox="0 0 16 16">
                                             <path
@@ -219,7 +219,7 @@ $item4 = "";
                                                 <div class="flex justify-start gap-2">
                                                     <div class="flex  items-center">
                                                         <a class="text-black text-2xl p-1 bg-green-400 rounded"
-                                                            href="./editleccion?idl=<?php echo $id_leccion ?>">
+                                                            href="./editleccion.php?idl=<?php echo $id_leccion ?>">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                                 fill="black" class="bi bi-pencil-square"
                                                                 viewBox="0 0 16 16">

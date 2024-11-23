@@ -1,9 +1,9 @@
-g-- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 17-11-2024 a las 06:08:18
+-- Tiempo de generación: 22-11-2024 a las 23:51:51
 -- Versión del servidor: 8.0.35
 -- Versión de PHP: 8.2.20
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `database`
+-- Base de datos: `curiositifydos`
 --
 
 -- --------------------------------------------------------
@@ -29,13 +29,13 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `anuncio` (
   `id` int NOT NULL,
-  `imagen` varchar(120) COLLATE utf8mb3_spanish2_ci NOT NULL,
-  `titulo` varchar(200) COLLATE utf8mb3_spanish2_ci NOT NULL,
-  `descripcion` text COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `imagen` varchar(120) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `titulo` varchar(200) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `descripcion` text CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `estado` int NOT NULL,
-  `enlace` varchar(255) COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `enlace` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `id_user` int NOT NULL,
-  `fecha` varchar(12) COLLATE utf8mb3_spanish2_ci NOT NULL
+  `fecha` varchar(12) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish2_ci;
 
 -- --------------------------------------------------------
@@ -58,8 +58,8 @@ CREATE TABLE `completed` (
 
 CREATE TABLE `cursos` (
   `id` int NOT NULL,
-  `titulo_curso` varchar(120) COLLATE utf8mb3_spanish2_ci NOT NULL,
-  `imagen_curso` varchar(120) COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `titulo_curso` varchar(120) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `imagen_curso` varchar(120) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `id_instructor` int NOT NULL,
   `fecha_creacion` date NOT NULL,
   `activo` tinyint NOT NULL,
@@ -100,14 +100,14 @@ CREATE TABLE `fav` (
 CREATE TABLE `lecciones` (
   `id_leccion` int NOT NULL,
   `id_curso` int NOT NULL,
-  `titulo` varchar(120) COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `titulo` varchar(120) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `descripcion` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci DEFAULT NULL,
-  `video_url` text COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `video_url` text CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `orden` int NOT NULL,
   `duracion` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci DEFAULT NULL,
   `is_completed` tinyint(1) DEFAULT NULL,
   `active` int NOT NULL,
-  `img_leccion` varchar(150) COLLATE utf8mb3_spanish2_ci NOT NULL
+  `img_leccion` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_spanish2_ci;
 
 -- --------------------------------------------------------
@@ -118,9 +118,9 @@ CREATE TABLE `lecciones` (
 
 CREATE TABLE `sugerencia` (
   `id` int NOT NULL,
-  `sugerencia` text NOT NULL,
-  `ip` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `sugerencia` text COLLATE utf8mb4_spanish2_ci NOT NULL,
+  `ip` text COLLATE utf8mb4_spanish2_ci
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -131,12 +131,12 @@ CREATE TABLE `sugerencia` (
 CREATE TABLE `usuarios` (
   `id` int NOT NULL,
   `imagen_profile` varchar(120) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci DEFAULT NULL,
-  `nombre` varchar(150) COLLATE utf8mb3_spanish2_ci NOT NULL,
-  `apellido` varchar(100) COLLATE utf8mb3_spanish2_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `nombre` varchar(150) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `apellido` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `telf` varchar(20) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci DEFAULT NULL,
-  `password` varchar(250) COLLATE utf8mb3_spanish2_ci NOT NULL,
-  `repeat_password` varchar(250) COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `password` varchar(250) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
+  `repeat_password` varchar(250) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish2_ci NOT NULL,
   `is_premium` int DEFAULT NULL,
   `is_admin` int DEFAULT NULL,
   `sexo` int DEFAULT NULL,
@@ -148,7 +148,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `imagen_profile`, `nombre`, `apellido`, `email`, `telf`, `password`, `repeat_password`, `is_premium`, `is_admin`, `sexo`, `fecha`) VALUES
-(1, 'IMGWSR20241117010231.png', 'Efrael', 'Junior', 'admin@gmail.comm', NULL, '$2y$10$Z1335KIEIo2uWhA76YigpuNTSKzFXJfqyur6XyGjLkEz1yHVWxZiO', '$2y$10$z1z3O4h1JcfMxb.2f5P3oekKK8jpts4MCIlSAyOnlokbjEggGelem', 0, 1, NULL, '2024-11-17 05:49:23');
+(1, 'IMGWSR20241117010231.png', 'Efrael', 'Junior', 'admin@gmail.com', NULL, '$2y$10$Z1335KIEIo2uWhA76YigpuNTSKzFXJfqyur6XyGjLkEz1yHVWxZiO', '$2y$10$z1z3O4h1JcfMxb.2f5P3oekKK8jpts4MCIlSAyOnlokbjEggGelem', 0, 1, NULL, '2024-11-17 05:49:23');
 
 --
 -- Índices para tablas volcadas
@@ -201,12 +201,6 @@ ALTER TABLE `lecciones`
   ADD KEY `fk_leccion_curso` (`id_curso`);
 
 --
--- Indices de la tabla `sugerencia`
---
-ALTER TABLE `sugerencia`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -251,12 +245,6 @@ ALTER TABLE `fav`
 --
 ALTER TABLE `lecciones`
   MODIFY `id_leccion` int NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `sugerencia`
---
-ALTER TABLE `sugerencia`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

@@ -23,7 +23,7 @@ function generateUILeccion(item, firstElement) {
 
   return `
     <div class="rounded-lg border bg-card text-card-foreground shadow-sm transition-all duration-300 ring-2 ring-primary group" data-id="13">
-      <a href="${item.estado === 1 || esAccesible ? `./verleccion?leccion=${item.id_leccion}&orden=${item.orden}&curso=${item.id_curso}` : '#'}"
+      <a href="${item.estado === 1 || esAccesible ? `./verleccion.php?leccion=${item.id_leccion}&orden=${item.orden}&curso=${item.id_curso}` : '#'}"
         class="${item.estado === 0 && !esAccesible ? 'cursor-not-allowed' : 'cursor-pointer'}">
         <div class="flex flex-col space-y-1.5 p-6" data-id="14">
           <div class="flex items-center justify-between" data-id="15">

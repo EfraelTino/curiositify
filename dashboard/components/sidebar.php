@@ -51,7 +51,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                     </div>
                     <div class="group relative flex items-center rounded-md">
                         <a class="<?php echo $item4; ?> group-hover:bg-gray-100 active:bg-gray-150  collapsed:w-8 transition-sidebar peer relative flex h-8 w-full items-center !justify-start gap-2 overflow-hidden rounded-lg px-2 text-left text-sm font-normal outline-none ring-blue-600 hover:text-zinc-900  "
-                            data-state="closed" href="./setting">
+                            data-state="closed" href="./setting.php">
                             <div
                                 class="collapsed:left-2 transition-sidebar absolute inset-2 flex w-fit items-center justify-center gap-2 whitespace-nowrap ">
                                 <i class="bi bi-gear text-sm"></i>
@@ -69,7 +69,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                     <?php if ($tipo_user == 1 || $tipo_user == '1') { ?>
                         <div class="group relative flex items-center rounded-md">
                             <a
-                                href="./students"
+                                href="./students.php"
                                 class="<?php echo $item3; ?> group-hover:bg-gray-100 collapsed:w-8 transition-sidebar peer relative flex h-8 w-full items-center !justify-start gap-2 overflow-hidden rounded-lg px-2 text-left text-sm font-normal outline-none ring-blue-600 hover:text-zinc-900 ">
                                 <div
                                     class="collapsed:left-2 transition-sidebar absolute inset-2 flex w-fit items-center justify-center gap-2 whitespace-nowrap">
@@ -80,7 +80,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                         </div>
                         <div class="group relative flex items-center rounded-md">
                             <a
-                                href="./cursos"
+                                href="./cursos.php"
                                 class="<?php echo $item2; ?> group-hover:bg-gray-100 collapsed:w-8 transition-sidebar peer relative flex h-8 w-full items-center !justify-start gap-2 overflow-hidden rounded-lg px-2 text-left text-sm font-normal outline-none ring-blue-600 hover:text-zinc-900 ">
                                 <div
                                     class="collapsed:left-2 transition-sidebar absolute inset-2 flex w-fit items-center justify-center gap-2 whitespace-nowrap ">
@@ -149,7 +149,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                 </div>
                 <div class="group relative flex items-center rounded-md">
                     <a class="group-hover:bg-gray-100 active:bg-gray-150  collapsed:w-8 transition-sidebar peer relative   w-full items-center  gap-2 overflow-hidden rounded-lg px-2 text-left text-sm font-normal outline-none ring-blue-600 hover:text-zinc-900  "
-                        data-state="closed" href="./setting">
+                        data-state="closed" href="./setting.php">
                         <div
                             class="collapsed:left-2 transition-sidebar  inset-2 gap-2 whitespace-nowrap flex flex-col justify-center items-center">
                             <i class="bi bi-gear text-sm"></i>
@@ -160,7 +160,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                 <?php if ($tipo_user == 1 || $tipo_user == '1') { ?>
                     <div class="group relative flex items-center rounded-md">
                         <a
-                            href="./students"
+                            href="./students.php"
                             class=" group-hover:bg-gray-100 collapsed:w-8 transition-sidebar peer relative  w-full items-center  overflow-hidden rounded-lg px-2 text-left text-sm font-normal outline-none ring-blue-600 hover:text-zinc-900 ">
                             <div
                                 class="collapsed:left-2 transition-sidebar  inset-2 gap-2  flex flex-col justify-center items-center whitespace-nowrap">
@@ -171,7 +171,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                     </div>
                     <div class="group relative flex items-center rounded-md">
                         <a
-                            href="./cursos"
+                            href="./cursos.php"
                             class="group-hover:bg-gray-100 collapsed:w-8 transition-sidebar peer relative  w-full items-center overflow-hidden rounded-lg px-2 text-left text-sm font-normal outline-none ring-blue-600 hover:text-zinc-900 ">
                             <div
                                 class="collapsed:left-2 transition-sidebar flex flex-col justify-center items-center  inset-2 gap-2 whitespace-nowrap ">

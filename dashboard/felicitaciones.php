@@ -69,7 +69,7 @@ if (!$cursoTerminado) {
                     </div>
                     <div class="row mt-3">
                         <div class="col-12 d-flex justify-content-center">
-                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base  font-normal ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#F3C623] text-black hover:bg-opacity-80 h-10 px-4 py- 2" href="../dashboard">Continuar aprendiendo <svg
+                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base  font-normal ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#F3C623] text-black hover:bg-opacity-80 h-10 px-4 py- 2" href="../dashboard.php">Continuar aprendiendo <svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black"
                                     class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -115,7 +115,7 @@ if (!$cursoTerminado) {
                     </div>
                     <div class="row mt-3">
                         <div class="col-12 d-flex justify-content-center">
-                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base  font-normal ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#F3C623] text-black hover:bg-opacity-80 h-10 px-4 py- 2" href="../dashboard">Continuar aprendiendo <svg
+                            <a class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base  font-normal ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#F3C623] text-black hover:bg-opacity-80 h-10 px-4 py- 2" href="../dashboard.php">Continuar aprendiendo <svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black"
                                     class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"

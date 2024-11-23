@@ -141,7 +141,7 @@ function getCursoCompleted(iduser) {
 }
 
 function renderCouser(item) {
-  return ` <a class="col-span-1 md:col-span-1 h-full overflow-hidden" href="./lecciones?idcr=${item.id}">
+  return ` <a class="col-span-1 md:col-span-1 h-full overflow-hidden" href="./lecciones.php?idcr=${item.id}">
         <div class="rounded-lg border bg-card text-card-foreground overflow-hidden shadow-sm flex flex-col">
             <div class="flex flex-col space-y-1.5 relative z-10 bg-background-subtle bg-white rounded-lg">
                 <img 

@@ -25,7 +25,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
 
                         </button>
                         <div class="dropdown-menu hidden p-0 absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg">
-                            <a class="text-sm font-normal border-transparent  hover:border-gray-300 text-zinc-900 relative flex h-8 w-full items-center  overflow-hidden rounded-t-md text-right px-4  hover:bg-gray-200" href="./setting">Cuenta</a>
+                            <a class="text-sm font-normal border-transparent  hover:border-gray-300 text-zinc-900 relative flex h-8 w-full items-center  overflow-hidden rounded-t-md text-right px-4  hover:bg-gray-200" href="./setting.php">Cuenta</a>
                             <div class="border-t border-gray-200"></div>
                             <a class="text-sm font-normal border-transparent  hover:border-gray-300 text-zinc-900 relative flex h-8 w-full items-center  overflow-hidden rounded-b-md text-right px-4  hover:bg-gray-200" href="./conexion/destroy.php">Salir</a>
                         </div>
