@@ -95,8 +95,8 @@ if ($statu_user == 1 || $statu_user == '1') {
                                     
                                 </div>
                                 <div class="grid grid-cols-1 mt-3 border rounded-lg bg-white">
-                                    <div class="relative w-full overflow-auto col-span-1">
-                                        <table class="w-full caption-bottom text-sm">
+                                    <div class="relative w-full overflow-auto col-span-1 flex flex-col">
+                                        <table class="w-full caption-bottom text-sm order-1 ">
                                             <thead class="[&_tr]:border-b">
                                                 <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
                                                     <th class="h-12 px-4 text-left align-middle font-medium text-slate-600">#</th>
@@ -108,8 +108,7 @@ if ($statu_user == 1 || $statu_user == '1') {
                                                     <th class="h-12 px-4 text-left align-middle font-medium text-slate-600">Acciones</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <?php
+                                            <?php
                                                 $tabla = "cursos";
                                                 $data = $operations->getData($tabla);
                                                 try {
@@ -118,6 +117,8 @@ if ($statu_user == 1 || $statu_user == '1') {
                                                         foreach ($data as $fila) {
                                                             $pos++
                                                 ?>
+                                            <tbody>
+                                            
                                                             <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
                                                                 <th class="px-4  py-2 align-middle text-black font-medium">
                                                                     <?php echo $pos; ?>
@@ -200,7 +201,7 @@ if ($statu_user == 1 || $statu_user == '1') {
                                                     </table>
                                                 </div>";
                                                     } else {
-                                                        echo '<h3 class="font-semibold text-black text-xl text-center" style="right: 30px; top:10px">
+                                                        echo '<h3 class="font-semibold py-3 text-black text-md text-center order-2" >
                                     No se han encontrado cursos
                                          </h3>';
                                                     }

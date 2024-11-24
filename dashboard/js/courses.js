@@ -263,7 +263,7 @@ if(instructor.length == 0 || instructor.length == null){
               const result = response.success;
             
               if (result === true) {
-                  window.location.href = `./cursos`;
+                  window.location.href = `./cursos.php`;
               } else {
                   Toastify({
                       close: true,

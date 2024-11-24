@@ -45,6 +45,11 @@ if (!$searchEnrollment) {
 
 
 <body>
+    <style>
+            .ytp-chrome-top, .ytp-chrome-bottom{
+                display: none !important;
+        }
+    </style>
     <div style="
         width: 100vw;
         min-height: 100vh;

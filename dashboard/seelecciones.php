@@ -141,8 +141,8 @@ $item4 = "";
                         </div>
                     </div>
                     <div class="grid grid-cols-12 bg-white mb-5 mt-3 border rounded-lg shadow-lg">
-                        <div class="relative col-span-12 w-full overflow-auto">
-                            <table class="w-full caption-bottom text-sm">
+                        <div class="relative col-span-12 w-full overflow-auto flex flex-col">
+                            <table class="w-full caption-bottom text-sm order-1">
                                 <thead class="[&_tr]:border-b">
                                     <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"></tr>
                                     <th class="h-12 px-4 text-left align-middle font-medium text-slate-600 text-center">#</th>
@@ -273,7 +273,7 @@ $item4 = "";
 
                     <?php
                                     } else {
-                                        echo ' <h3 class="text-center font-semibold text-xl">No se econtraron cursos</h3>';
+                                        echo '<h3 class="font-semibold py-3 text-black text-md text-center order-2" >No se econtraron cursos</h3>';
                                     }
                     ?>
 

@@ -16,7 +16,7 @@ $tipo_user = $obtenerUsuario[0]['is_admin'];
                         <button class="grid grid-cols-2 items-center" id="userDropdown" aria-haspopup="true" aria-expanded="true">
                             <?php if (!empty($obtenerUsuario)) { ?>
                              
-<img src="<?php echo './assets/users/'. $obtenerUsuario[0]['imagen_profile'] ?>" alt="profile" class="w-10 h-10 rounded-full bg-gray-200">
+<img src="<?php echo './assets/users/'. $obtenerUsuario[0]['imagen_profile'] ?>" alt="profile" class="w-10 h-10 rounded-full bg-gray-200" style="object-fit: cover;">
                                     <span class="text-sm font-normal border-transparent  hover:border-gray-300 text-zinc-900 transition-sidebar peer relative flex h-8 w-full items-center !justify-start gap-2 overflow-hidden rounded-lg text-right">Cuenta</span>
                           
                             <?php } else {

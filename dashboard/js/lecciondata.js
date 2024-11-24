@@ -98,8 +98,8 @@ function generateUICourse(message) {
     const hasPrevious = currentIndex > 0;
     const hasNext = currentIndex < message.length - 1;
 
-    let nextButtonAction = hasNext ? `./verleccion?leccion=${nextLeccion.id_leccion}&orden=${nextLeccion.orden}&curso=${nextLeccion.curso_id}` : `./felicitaciones?idc=${cursoid}`; // Si hay siguiente, lo lleva a la siguiente lección, de lo contrario a felicitaciones
-    let prevButtonAction = hasPrevious ? `./verleccion?leccion=${prevLeccion.id_leccion}&orden=${prevLeccion.orden}&curso=${prevLeccion.curso_id}` : '#'; // Si hay anterior, lo lleva a la lección anterior, de lo contrario no hace nada
+    let nextButtonAction = hasNext ? `./verleccion.php?leccion=${nextLeccion.id_leccion}&orden=${nextLeccion.orden}&curso=${nextLeccion.curso_id}` : `./felicitaciones.php?idc=${cursoid}`; // Si hay siguiente, lo lleva a la siguiente lección, de lo contrario a felicitaciones
+    let prevButtonAction = hasPrevious ? `./verleccion.php?leccion=${prevLeccion.id_leccion}&orden=${prevLeccion.orden}&curso=${prevLeccion.curso_id}` : '#'; // Si hay anterior, lo lleva a la lección anterior, de lo contrario no hace nada
     let prevButtonDisabled = !hasPrevious; // Si no hay lección anterior, deshabilitamos el botón "Atrás"
 
     console.log("Lección actual:", currentLeccion);
@@ -109,7 +109,7 @@ function generateUICourse(message) {
     return `
     <div class="rounded-lg border bg-white  shadow-sm mb-4">
         <iframe class="w-full aspect-video rounded-md"
-                src="https://www.youtube.com/embed/${extractVideoId(currentLeccion.video_url)}"
+                src="https://www.youtube.com/embed/${extractVideoId(currentLeccion.video_url)}?rel=0"
                 frameborder="0"
                 allow="autoplay; fullscreen"
                 allowfullscreen

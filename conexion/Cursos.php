@@ -6,6 +6,9 @@ class Cursos
     private $user = "root";
     private $pass = "root";
     private $db = "database";
+
+  
+
     public $dbConnect;
 
     public $respuesta = array();
